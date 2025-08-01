@@ -16,8 +16,6 @@ A modern, responsive sports analytics dashboard built with Node.js, Express, and
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript
 - **Backend:** Node.js, Express.js
 - **Styling:** Custom CSS with responsive grid layouts
-- **Icons:** Font Awesome
-- **Fonts:** Inter (Google Fonts)
 
 ## 🏃‍♂️ Getting Started
 
@@ -55,12 +53,6 @@ Visit `http://localhost:3000` to view the dashboard.
 - **Mobile App** - React Native or Flutter mobile application
 - **PWA Features** - Offline functionality and app-like experience
 - **API Development** - RESTful API for third-party integrations
-
-### Monetization
-- **Premium Features** - Advanced analytics and exclusive picks
-- **Subscription Model** - Monthly/yearly premium access
-- **Affiliate Partnerships** - Sportsbook referral programs
-- **Data Licensing** - API access for other developers
 
 ## 📱 Screenshots
 
