@@ -1,0 +1,30 @@
+{
+  "name": "knowball",
+  "version": "1.0.0",
+  "description": "Your Ultimate Sports Hub - Bet smarter, play better, know more",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sports",
+    "betting",
+    "fantasy",
+    "ai",
+    "predictions",
+    "odds"
+  ],
+  "author": "Jimmy Zhu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

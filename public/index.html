@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowBall - Personal Sports Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <h1>KnowBall</h1>
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search players, teams, or stats...">
+                </div>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-trophy"></i>
+                        <span>Fantasy</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-dice"></i>
+                        <span>Betting</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Community</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Profile Section -->
+            <div class="nav-profile">
+                <div class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">5</span>
+                </div>
+                <div class="profile-icon">
+                    <img src="https://via.placeholder.com/40x40/ff6b35/ffffff?text=J" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="dashboard-layout">
+                <!-- Left Sidebar - Live Games -->
+                <aside class="sidebar left-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Live Games</h3>
+                        <div class="live-games">
+                            <div class="game-card">
+                                <div class="game-header">
+                                    <span class="game-time">Q4 2:34</span>
+                                    <span class="game-status live">LIVE</span>
+                                </div>
+                                <div class="game-teams">
+                                    <div class="team">
+                                        <span class="team-name">Lakers</span>
+                                        <span class="team-score">108</span>
+                                    </div>
+                                    <div class="vs">vs</div>
+                                    <div class="team">
+                                        <span class="team-name">Warriors</span>
+                                        <span class="team-score">102</span>
+                                    </div>
+                                </div>
+                                <div class="game-stats">
+                                    <span>Spread: LAL -5.5</span>
+                                    <span>Total: O/U 225.5</span>
+                                </div>
+                            </div>
+                            <div class="game-card">
+                                <div class="game-header">
+                                    <span class="game-time">Q3 8:12</span>
+                                    <span class="game-status live">LIVE</span>
+                                </div>
+                                <div class="game-teams">
+                                    <div class="team">
+                                        <span class="team-name">Celtics</span>
+                                        <span class="team-score">95</span>
+                                    </div>
+                                    <div class="vs">vs</div>
+                                    <div class="team">
+                                        <span class="team-name">Heat</span>
+                                        <span class="team-score">98</span>
+                                    </div>
+                                </div>
+                                <div class="game-stats">
+                                    <span>Spread: BOS +2.5</span>
+                                    <span>Total: O/U 210.5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Dashboard -->
+                <section class="main-dashboard">
+                    <!-- Analytics Grid -->
+                    <div class="analytics-grid">
+                        <!-- AI Predictions Widget -->
+                        <div class="widget ai-widget">
+                            <div class="widget-header">
+                                <h3>AI Predictions</h3>
+                                <span class="widget-badge">89% Accuracy</span>
+                            </div>
+                            <div class="widget-content">
+                                <div class="prediction-item">
+                                    <div class="prediction-header">
+                                        <span class="prediction-type">Betting Pick</span>
+                                        <span class="confidence">92%</span>
+                                    </div>
+                                    <div class="prediction-content">
+                                        <span class="pick">LAL -5.5 vs GSW</span>
+                                        <span class="reasoning">LeBron averaging 28/8/8, AD back healthy</span>
+                                    </div>
+                                </div>
+                                <div class="prediction-item">
+                                    <div class="prediction-header">
+                                        <span class="prediction-type">Player Prop</span>
+                                        <span class="confidence">87%</span>
+                                    </div>
+                                    <div class="prediction-content">
+                                        <span class="pick">Mahomes O 2.5 TD</span>
+                                        <span class="reasoning">Favorable matchup, high-scoring game expected</span>
+                                    </div>
+                                </div>
+                                <div class="prediction-item">
+                                    <div class="prediction-header">
+                                        <span class="prediction-type">Game Total</span>
+                                        <span class="confidence">85%</span>
+                                    </div>
+                                    <div class="prediction-content">
+                                        <span class="pick">BOS vs MIA Over 210.5</span>
+                                        <span class="reasoning">Both teams averaging 110+ PPG this season</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Betting Lines Widget -->
+                        <div class="widget betting-widget">
+                            <div class="widget-header">
+                                <h3>Betting Lines</h3>
+                                <span class="widget-badge">Live</span>
+                            </div>
+                            <div class="widget-content">
+                                <div class="betting-line">
+                                    <div class="line-header">
+                                        <span class="teams">LAL vs GSW</span>
+                                        <span class="time">Tonight 7:30 PM</span>
+                                    </div>
+                                    <div class="line-odds">
+                                        <div class="spread">
+                                            <span class="team">LAL -5.5</span>
+                                            <span class="odds">-110</span>
+                                        </div>
+                                        <div class="spread">
+                                            <span class="team">GSW +5.5</span>
+                                            <span class="odds">-110</span>
+                                        </div>
+                                    </div>
+                                    <div class="total-line">
+                                        <span class="total">Total: 225.5</span>
+                                        <div class="over-under">
+                                            <span class="over">Over -110</span>
+                                            <span class="under">Under -110</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="betting-line">
+                                    <div class="line-header">
+                                        <span class="teams">BOS vs MIA</span>
+                                        <span class="time">Tonight 8:00 PM</span>
+                                    </div>
+                                    <div class="line-odds">
+                                        <div class="spread">
+                                            <span class="team">BOS +2.5</span>
+                                            <span class="odds">-110</span>
+                                        </div>
+                                        <div class="spread">
+                                            <span class="team">MIA -2.5</span>
+                                            <span class="odds">-110</span>
+                                        </div>
+                                    </div>
+                                    <div class="total-line">
+                                        <span class="total">Total: 210.5</span>
+                                        <div class="over-under">
+                                            <span class="over">Over -110</span>
+                                            <span class="under">Under -110</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right Sidebar - Quick Actions -->
+                <aside class="sidebar right-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Quick Actions</h3>
+                        <div class="quick-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>View Analytics</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-history"></i>
+                                <span>Bet History</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-trophy"></i>
+                                <span>Fantasy Stats</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-dice"></i>
+                                <span>Place Bet</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Export Data</span>
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

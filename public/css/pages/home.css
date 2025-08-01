@@ -1,0 +1,364 @@
+/* Home Page Specific Styles */
+
+/* Enhanced post interactions */
+.post .action-btn.liked {
+    color: #ff6b35;
+}
+
+.post .action-btn.liked i {
+    animation: heartBeat 0.3s ease;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Enhanced hover effects for posts */
+.post:hover .post-type-badge {
+    transform: scale(1.05);
+}
+
+/* Trending topics animation */
+.topic-item:hover .topic-tag {
+    color: #e55a2b;
+    transform: translateX(2px);
+}
+
+/* User suggestion hover effects */
+.user-suggestion:hover {
+    background: rgba(255, 107, 53, 0.05);
+    border-radius: 8px;
+    padding: 8px 6px;
+    margin: 0 -6px;
+}
+
+/* Live games pulse animation */
+.game-item {
+    position: relative;
+}
+
+.game-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 107, 53, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0; }
+}
+
+/* Enhanced create post */
+.create-post {
+    position: relative;
+    overflow: hidden;
+}
+
+.create-post::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.05), transparent);
+    transition: left 0.5s ease;
+}
+
+.create-post:hover::before {
+    left: 100%;
+}
+
+/* Dashboard Specific Styles */
+
+/* Enhanced widget interactions */
+.widget {
+    transition: all 0.3s ease;
+}
+
+.widget:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated progress bars */
+.progress-bar {
+    animation: progressFill 2s ease-out;
+}
+
+@keyframes progressFill {
+    from { width: 0%; }
+    to { width: var(--progress-width); }
+}
+
+/* Live game pulse animation */
+.game-status.live {
+    animation: livePulse 2s infinite;
+}
+
+@keyframes livePulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Stat card hover effects */
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Position item status animations */
+.position-item {
+    transition: all 0.3s ease;
+}
+
+.position-item:hover {
+    transform: translateX(4px);
+    border-color: #ff6b35;
+}
+
+/* Dashboard header gradient effect */
+.dashboard-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.05), transparent);
+    transition: left 0.5s ease;
+}
+
+.dashboard-header:hover::before {
+    left: 100%;
+}
+
+/* Widget badge animations */
+.widget-badge {
+    animation: badgeGlow 3s ease-in-out infinite;
+}
+
+@keyframes badgeGlow {
+    0%, 100% { box-shadow: 0 0 0 rgba(255, 107, 53, 0.3); }
+    50% { box-shadow: 0 0 8px rgba(255, 107, 53, 0.5); }
+}
+
+/* Activity feed item animations */
+.activity-item {
+    transition: all 0.3s ease;
+}
+
+.activity-item:hover {
+    background: rgba(255, 107, 53, 0.05);
+    border-radius: 8px;
+    padding: 12px 8px;
+    margin: 0 -8px;
+}
+
+/* Community post hover effects */
+.community-post {
+    transition: all 0.3s ease;
+}
+
+.community-post:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Quick action button animations */
+.quick-actions .action-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-actions .action-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.1), transparent);
+    transition: left 0.3s ease;
+}
+
+.quick-actions .action-btn:hover::before {
+    left: 100%;
+}
+
+/* Chart placeholder animations */
+.stat-chart, .trend-chart {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-chart::after, .trend-chart::after {
+    content: '📈';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    opacity: 0.3;
+}
+
+/* Fantasy player card hover effects */
+.player {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.player:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #ff6b35;
+}
+
+/* Prediction confidence indicator */
+.confidence {
+    position: relative;
+    overflow: hidden;
+}
+
+.confidence::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.confidence:hover::before {
+    transform: translateX(100%);
+}
+
+/* Responsive adjustments for home page */
+@media (max-width: 1024px) {
+    .feed-layout {
+        gap: 15px;
+    }
+    
+    .post {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .create-post {
+        padding: 16px;
+    }
+    
+    .post-input {
+        gap: 8px;
+    }
+    
+    .post-actions {
+        gap: 8px;
+    }
+    
+    .action-btn {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    
+    .post-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive adjustments for dashboard */
+@media (max-width: 1200px) {
+    .analytics-grid {
+        gap: 20px;
+    }
+    
+    .widget-content {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        padding: 20px;
+    }
+    
+    .analytics-grid {
+        gap: 16px;
+    }
+    
+    .widget-header {
+        padding: 16px;
+    }
+    
+    .widget-content {
+        padding: 16px;
+    }
+    
+    .fantasy-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .lineup-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-header {
+        padding: 16px;
+    }
+    
+    .header-content h2 {
+        font-size: 18px;
+    }
+    
+    .analytics-grid {
+        gap: 12px;
+    }
+    
+    .widget-header {
+        padding: 12px;
+    }
+    
+    .widget-content {
+        padding: 12px;
+    }
+    
+    .fantasy-summary {
+        grid-template-columns: 1fr;
+    }
+    
+    .lineup-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
