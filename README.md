@@ -1,4 +1,4 @@
-# KnowBall - Sports Analytics Dashboard
+# KnowBall - Every Stat, One Place.
 
 A modern, responsive sports analytics dashboard built with Node.js, Express, and vanilla JavaScript. Features real-time sports data visualization, AI-powered predictions, and betting insights.
 
