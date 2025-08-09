@@ -1301,8 +1301,8 @@ body.dark-mode .btn-secondary:hover {
 body.dark-mode .widget {
     background: #1a1a1a;
     border-color: #333333;
-}
-
+    }
+    
 body.dark-mode .widget-header h3 {
     color: #ffffff;
 }
@@ -1363,7 +1363,7 @@ body.dark-mode .over:hover, body.dark-mode .under:hover {
     background: rgba(255, 107, 53, 0.1);
     border-color: #ff6b35;
     color: #ff6b35;
-}
+    }
 
 body.dark-mode .quick-actions .action-btn {
     background: #0a0a0a;

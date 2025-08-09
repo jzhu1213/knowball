@@ -1,0 +1,605 @@
+/* Fantasy Page Specific Styles */
+
+/* Fantasy Header */
+.fantasy-header {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.league-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.league-stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.league-stats span {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.record {
+    color: #ff6b35 !important;
+    font-weight: 600 !important;
+}
+
+/* Fantasy Layout */
+.fantasy-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr 280px;
+    gap: 24px;
+}
+
+/* Lineup Management */
+.lineup-slots {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lineup-slot {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.lineup-slot:hover {
+    border-color: #ff6b35;
+    transform: translateX(4px);
+}
+
+.lineup-slot.filled {
+    background: #ffffff;
+    border-color: #e9ecef;
+}
+
+.slot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.position {
+    font-size: 12px;
+    font-weight: 700;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 107, 53, 0.1);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.swap-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: rgba(255, 107, 53, 0.1);
+    color: #ff6b35;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.swap-btn:hover {
+    background: #ff6b35;
+    color: white;
+    transform: scale(1.1);
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.player-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e9ecef;
+}
+
+.player-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.player-name {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.player-team {
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.player-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projected {
+    font-weight: 700;
+    color: #ff6b35;
+    font-size: 14px;
+}
+
+.status {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status.playing {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.status.questionable {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+.status.out {
+    background: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+}
+
+/* Lineup Summary */
+.lineup-summary {
+    margin-top: 20px;
+    padding: 16px;
+    background: rgba(255, 107, 53, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.projected-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projected-total .label {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 600;
+}
+
+.projected-total .total {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff6b35;
+}
+
+/* Main Fantasy Content */
+.main-fantasy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Matchup Widget */
+.matchup-widget {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.matchup-content {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.team {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.team-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #e9ecef;
+}
+
+.team-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.team-name {
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+.team-record {
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.team-score {
+    text-align: center;
+}
+
+.score {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.team-score .projected {
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.vs-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.vs {
+    font-size: 16px;
+    font-weight: 700;
+    color: #666666;
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.game-time {
+    font-size: 11px;
+    color: #ff6b35;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Standings Widget */
+.standings-widget {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.standings-content {
+    padding: 20px;
+}
+
+.standings-table {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.standings-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 80px 80px;
+    gap: 12px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.standings-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 80px 80px;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.standings-row:hover {
+    background: #f8f9fa;
+}
+
+.standings-row.current-team {
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.standings-row .rank {
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.standings-row .team-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.standings-row .team-info img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.standings-row .team-name {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.standings-row .record {
+    font-weight: 600;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.standings-row .points {
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+}
+
+/* Bench & Available Players */
+.bench-players, .available-players {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bench-player, .available-player {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.bench-player:hover, .available-player:hover {
+    background: rgba(255, 107, 53, 0.05);
+    border-color: #ff6b35;
+    transform: translateX(2px);
+}
+
+.bench-player img, .available-player img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.bench-player .player-info, .available-player .player-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.bench-player .player-name, .available-player .player-name {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 13px;
+}
+
+.bench-player .player-team, .available-player .player-team {
+    font-size: 11px;
+    color: #666666;
+}
+
+.bench-player .player-stats, .available-player .player-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.bench-player .projected, .available-player .projected {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+.start-btn, .add-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.start-btn {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.start-btn:hover {
+    background: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+}
+
+.add-btn {
+    background: rgba(255, 107, 53, 0.1);
+    color: #ff6b35;
+}
+
+.add-btn:hover {
+    background: #ff6b35;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode .fantasy-header {
+    background: #1a1a1a;
+    border-color: #333333;
+}
+
+body.dark-mode .league-info h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .lineup-slot {
+    background: #0a0a0a;
+    border-color: #333333;
+}
+
+body.dark-mode .lineup-slot.filled {
+    background: #1a1a1a;
+}
+
+body.dark-mode .player-name {
+    color: #ffffff;
+}
+
+body.dark-mode .team-name {
+    color: #ffffff;
+}
+
+body.dark-mode .score {
+    color: #ffffff;
+}
+
+body.dark-mode .standings-row .team-name {
+    color: #ffffff;
+}
+
+body.dark-mode .standings-row .rank {
+    color: #ffffff;
+}
+
+body.dark-mode .standings-row .record {
+    color: #ffffff;
+}
+
+body.dark-mode .standings-header {
+    background: #0a0a0a;
+}
+
+body.dark-mode .standings-row:hover {
+    background: #0a0a0a;
+}
+
+body.dark-mode .bench-player, body.dark-mode .available-player {
+    background: #0a0a0a;
+    border-color: #333333;
+}
+
+body.dark-mode .bench-player .player-name, body.dark-mode .available-player .player-name {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .fantasy-layout {
+        grid-template-columns: 300px 1fr 260px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .fantasy-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+    
+    .fantasy-header {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .matchup-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .team {
+        width: 100%;
+    }
+    
+    .vs-divider {
+        order: 2;
+    }
+    
+    .standings-header, .standings-row {
+        grid-template-columns: 30px 1fr 60px 60px;
+        gap: 8px;
+    }
+    
+    .league-stats {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+} 
